@@ -28,8 +28,8 @@ const day27TempF = 74
 const day28TempC = 17
 const day29TempF = 76
 const day30TempC = 29
-const fahrenheitToCelsius = (fahrenheit) => (tempInfahrenheit  - 32) * 5 / 9
-const celsiusToFahrenheit = (celsius) => (tempInCelsius * 9 / 5) + 32
+const fahrenheitToCelsius = (fahrenheit) => (fahrenheit  - 32) * 5 / 9
+const celsiusToFahrenheit = (celsius) => (celsius * 9 / 5) + 32
 const temperaturesInFahrenheit = [
     day1TempF,
     celsiusToFahrenheit(day2TempC),
@@ -105,12 +105,10 @@ for (let i = 0; i < temperaturesInCelsius.length; i++) {
 const count = temperaturesInFahrenheit.length; // or temperaturesInCelsius.length, both are 30
 const avg_temperature_in_fahrenheit = tot_temperature_in_fahrenheit / temperaturesInFahrenheit.length;
 const avg_temperature_in_celsius = tot_temperature_in_celsius / temperaturesInCelsius.length;
-console.log("Total Tempersture in Fahrenheit: :,tot_temperature_in_fahrenheit)
+console.log("Total Temperature in Fahrenheit: ",tot_temperature_in_fahrenheit)
 console.log("Total Temperature in Celsius: ", tot_temperature_in_celsius)
 console.log("Average Temperature in Fahrenheit: ", avg_temperature_in_fahrenheit)
 console.log("Average Temperature in Celsius: ", avg_temperature_in_celsius) 
-
-
 
 //* Then work on the conversion of the temperature from Celsius to Fahrenheit
 // Then work on the conversion of the temperature from Celsius to Fahrenheit (or viceversa)
